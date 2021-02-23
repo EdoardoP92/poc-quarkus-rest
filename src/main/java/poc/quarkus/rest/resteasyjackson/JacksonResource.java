@@ -38,11 +38,11 @@ public class JacksonResource {
     }
 
     public static class Quark {
+    	
         public String name;
         public String description;
 
-        public Quark() {
-        }
+        public Quark() {}
 
         public Quark(String name, String description) {
             this.name = name;
