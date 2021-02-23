@@ -15,8 +15,11 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response hello() {
+    	
     	Quark entity = new Quark("code","description");
+    	
     	GenericEntity<Quark> responsePayload = new GenericEntity<>(entity, Quark.class);
+    	
     	Response response = Response
     			.status(200)
     			.header("header-key", "header-value")
